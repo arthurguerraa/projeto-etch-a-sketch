@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+      <h1>Etch-a-Sketch</h1>
+      <p>Clique e arraste para desenhar — escolha entre cor aleatória ou cor fixa</p>
+    </header>
+    <div class="controles">
+      <button id="btn-redimensionar">Redimensionar grade</button>
+      <button id="btn-limpar">Limpar</button>
+
+      <!-- Seletor de cor e checkbox para alternar modo aleatório/fixo -->
+      <label for="input-cor">Cor fixa:</label>
+      <input id="input-cor" type="color" value="#000000" title="Escolher cor">
+
+      <label for="chk-aleatorio">
+        <input id="chk-aleatorio" type="checkbox" checked>
+        Usar cor aleatória
+      </label>
+    </div>
+
+    <div id="grade" class="grade-container" aria-label="Área de desenho"></div>
+
+    <div class="ajuda">
+      Dica: insira um número até 100 (ex.: 16, 32, 64). Grades muito grandes podem ficar lentas.
+    </div>
+
+    <div class="status" id="status">Modo: <strong id="modo-text">Aleatório</strong></div>
+  </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
